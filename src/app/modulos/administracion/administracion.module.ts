@@ -1,0 +1,25 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { AdministracionRoutingModule } from './administracion-routing.module';
+import { CrearPersonaComponent } from './personas/crear-persona/crear-persona.component';
+import { BuscarPersonaComponent } from './personas/buscar-persona/buscar-persona.component';
+import { EditarPersonaComponent } from './personas/editar-persona/editar-persona.component';
+import { EliminarPersonaComponent } from './personas/eliminar-persona/eliminar-persona.component';
+import { CrearProductoComponent } from './productos/crear-producto/crear-producto.component';
+
+
+@NgModule({
+  declarations: [
+    CrearPersonaComponent,
+    BuscarPersonaComponent,
+    EditarPersonaComponent,
+    EliminarPersonaComponent
+    
+  ],
+  imports: [
+    CommonModule,
+    AdministracionRoutingModule
+  ]
+})
+export class AdministracionModule { }
